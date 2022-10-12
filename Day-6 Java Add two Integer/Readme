@@ -1,0 +1,14 @@
+in this program 
+First we print Enter Two number
+after that 
+Create two variable First and Second
+and  then assigned values 10 & 20 
+create new variable sum
+sum is assigned for add the  first and second 
+and in the last we print the sum 
+that gives the output
+Output:
+
+Enter two numbers
+10 20
+The sum is: 30
