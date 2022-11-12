@@ -1,0 +1,13 @@
+OutPut Format :
+The age of Client is 20  
+MyValuesTotal = 10000.0
+theRemainder = 0.0
+isNoRemainder = true
+
+Describe the code 
+first i create two variable name as myFirstValue and mySecondValue and assigned the values is 20.00d and 80.00d
+now create a third variable myTotal and in this add the first & second variable and multiply by 100
+and print the result which is 10000.0
+now create a new variable name as theRemainder in yhis divide the myValuetotal by th modulor operator by 40.00d
+
+after that use ternary operator and if statement
