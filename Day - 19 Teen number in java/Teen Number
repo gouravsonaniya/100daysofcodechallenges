@@ -1,0 +1,25 @@
+public class TeenNumberChecker {
+    
+    public static void main(String[] args) {
+        boolean teen = hasTeen(9, 99, 19);
+        System.out.println(teen);
+        boolean teenSecond = isTeen(9);
+        System.out.println(teenSecond);
+    }
+
+    public static boolean hasTeen(int firstNumber, int secondNumber, int thirdNumber) {
+        if ((firstNumber >= 13 && firstNumber <= 19) || (secondNumber >= 13 && secondNumber <= 19) || (thirdNumber >= 13 && thirdNumber <= 19)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean isTeen(int secondFirst) {
+        if (secondFirst >= 13 && secondFirst <= 19) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
