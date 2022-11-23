@@ -1,0 +1,4 @@
+In this challenge, we're going to create a method, that takes time, represented in seconds,as the parameter.
+We'll then want to transform the seconds into hours.
+Next we'll display the time in hours, with the remaining minutes and seconds, in a String.
+we'll do this transformation in two steps,which allows us to overloaded methods.
