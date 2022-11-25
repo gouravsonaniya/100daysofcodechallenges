@@ -1,0 +1,25 @@
+public class AreaCalculator {
+    public static void main(String[] args) {
+        double circle = area(0);
+       double rectangle =  area(0,4.0);
+        System.out.println(circle);
+        System.out.println(rectangle);
+    }
+    public static double area(double radius){
+        if(radius < 0) {
+            return -1.0;
+        }
+        double areaOfCircle = (Math.PI * radius * radius);
+        System.out.println("The area of a circle = " + areaOfCircle);
+        return 0;
+    }
+    public static double area(double x, double y){
+        if(x < 0 || y < 0) {
+           return -1.0;
+        }
+        double areaOfRectangle = (x * y);
+        System.out.println("the area of rectangle = " + areaOfRectangle);
+       return 0;
+    }
+
+}
