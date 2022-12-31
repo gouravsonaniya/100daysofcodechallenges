@@ -1,0 +1,15 @@
+Sum 3 And 5 Challenge 
+Create a for loop using a range of number from 1 to 1000 inclusive.
+Sum all the numbers that can be divided by both 3 and 5.
+Print out the number that have met the above conditions.
+Break out of the loop once you have found 5 numbers that met the condition above.
+After breaking out the loop ,print the sum of the numbers that met the conditions
+above.
+
+Output : 
+Found a match = 15
+Found a match = 30
+Found a match = 45
+Found a match = 60
+Found a match = 75
+Sum = 225
