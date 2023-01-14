@@ -1,0 +1,9 @@
+Calculator
+(+,-,*,/,%)
+
+Input : 
+a = 10
+b = 20
+
+OutPut : 
+a + b = 30
