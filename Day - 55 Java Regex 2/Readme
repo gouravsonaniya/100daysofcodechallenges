@@ -18,6 +18,7 @@ Constraints
 
 Each sentence consists of at most  English alphabetic letters and whitespaces.
 Output Format
+1<=n<=100
 
 Stub code in the editor prints the sentence modified by the replaceAll line to stdout. The modified string must be a modified version of the initial sentence where all repeat occurrences of each word are removed.
 
