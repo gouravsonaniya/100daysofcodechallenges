@@ -1,0 +1,46 @@
+class Solution {
+    public boolean[][] m; // to store if s.substring(i, j + 1) is Palindrome
+    public String answer;
+    
+    public String longestPalindrome(String s) {
+      	// use array other than sustring, comparing
+        char[] chars = s.toCharArray();
+        int len = chars.length;
+      
+      	// initialization
+        this.m = new boolean[len][len];
+        this.answer = s.substring(0, 1);
+        if (len == 1) return s;
+        
+      	// assign true to memory first (length of substring, 1 and 2)
+        for (int i = 0; i < len; i++) 
+        {
+            m[i][i] = true;
+            if (i + 1 < len && chars[i] == chars[i + 1]) 
+            {
+                m[i][i + 1] = true;
+                this.answer = s.substring(i, i + 2);
+            }
+        }
+        
+      	// iterate size of a substring from 3
+        for (int i = 2; i < len; i++) 
+        {
+            for (int j = 0; j + i < len; j++) 
+            {
+              	// if both ends are equal and its substring is Palindrome
+                if (chars[j] == chars[j + i] && this.m[j + 1][j + i - 1]) 
+                {
+                  this.m[j][j + i] = true;
+                  // update if current longest String, anwer is shorter than the length of new Palindrome string
+                  // i is not a length, but index, so + 1 to calculate the length of the new
+                  if (this.answer.length() < i + 1)
+                    answer = s.substring(j, j + i + 1);
+                }
+            }
+        }
+        
+        return this.answer;
+    }
+    
+}
